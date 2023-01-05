@@ -1,3 +1,44 @@
+
+
+This is a fork and minimalized version of
+[`compose-regexp/compose-regexp.js`](https://github.com/compose-regexp/compose-regexp.js) which I have
+created because the original package inadvertantly did not qork with CommonJS' `require()`.
+
+Installation as usual:
+
+```bash
+npm install 'compose-regexp-commonjs'
+pnpm add 'compose-regexp-commonjs'
+```
+
+One can then use `require` in the usual way:
+
+```coffee
+  { atomic
+    bound
+    capture
+    charSet
+    either
+    flags
+    lookAhead
+    lookBehind
+    maybe
+    namedCapture
+    noBound
+    notAhead
+    notBehind
+    ref
+    sequence
+    suffix        } = require 'compose-regexp-commonjs'
+```
+
+
+<hr>
+Below is the original `README.md`:
+<hr>
+
+
+
 # ![compose-regexp.js](https://raw.githubusercontent.com/compose-regexp/compose-regexp.js/main/logo.svg)
 
 [![No dependencies](https://img.shields.io/badge/deps-none-brightgreen)](./package.json)
